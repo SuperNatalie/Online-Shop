@@ -14,7 +14,12 @@ html, body {
 
 p {
     color: #323A45;
+    font-size: 1.2em;
 }
+
+main a {
+    font-size: 1.2em;
+} 
 
 header {
     display: flex;
@@ -28,7 +33,7 @@ header {
 
 .items {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 370px;
     grid-template-rows: repeat(33, 600px );
 }
 
@@ -38,9 +43,9 @@ img {
 }
 
  #smallpic {
-    height: 70vh;
-    width: auto;
-    margin-left: 50px;
+    height: 450px;
+    width: 300px;
+    margin-left: 30px;
 } 
 
 nav img {
@@ -83,7 +88,7 @@ a {
 }
 
 #margin {
-    margin-top: 10px;
+    margin-top: 25px;
 }
 
 
