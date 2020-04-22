@@ -11,6 +11,7 @@ html, body {
     background:#EEEEEE
 }
 
+
 p {
     color: #323A45;
 }
@@ -28,15 +29,27 @@ header {
 .items {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(33, 1fr )
+    grid-template-rows: repeat(33, 600px );
 }
 
 img {
-    height: 70vh;
+    height: auto;
+    width: 375px;
 }
+
+ #smallpic {
+    height: 70vh;
+    width: auto;
+    margin-left: 50px;
+} 
 
 nav img {
     height: 20px;
+    width: 20px;
+}
+
+a {
+    text-decoration: none;
 }
 
 /* Eigene Klasse für Artikelbeschreibung (text) und Price, damit es im grid nebeneinander steht */
@@ -78,9 +91,6 @@ nav img {
 
 /* footer */
 
-footer {
-    margin-bottom: ;
-}
 
 .small, .small a  {
     color: #323A45;
