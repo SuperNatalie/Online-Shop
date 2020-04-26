@@ -10,7 +10,6 @@ html {
 
 body {
     font-family: 'Karla', sans-serif;
-    width: 95vw;
     margin-left: auto;
     margin-right: auto; 
 }
@@ -32,39 +31,66 @@ header {
     justify-content: space-between;
     font-size: 1.3em;
     margin-top: 20px;
-    margin-right: 0;
     align-items: baseline;
-    width: 350px;
+   
 }
 
+.nav {
+    width: 50vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+ul li {
+    display: none;
+}
+
+ul :nth-child(4) {
+    display: initial;
+    margin-left: 95%;
+    margin-right: auto;
+}
 /* main */
 
 
 
 .items {
     display: grid;
-    grid-template-columns: 350px;
+    grid-template-columns: 1fr;
     grid-template-rows: repeat(33, 550px );
 }
 
 img {
-    max-height: 460px;
-    width: 350px;
+   width: 100%;
+   height: 80%;
+   object-fit: cover;
 }
 
- /* #smallpic {
-    height: 450px;
-    width: 300px;
-    margin-left: 30px;
-}  */
+.item img:hover {
+    opacity: 0.5;
+}
+
+
+nav a{
+    display: none;
+}
 
 nav img {
     height: 20px;
     width: 20px;
+    float: right;
 }
+
 
 a {
     text-decoration: none;
+    color: black;
 }
 
 /* Eigene Klasse für Artikelbeschreibung (text) und Price, damit es im grid nebeneinander steht */
@@ -107,6 +133,7 @@ a {
 /* footer */
 
 
+
 .small, .small a  {
     color: #323A45;
     font-weight: lighter;
@@ -137,12 +164,26 @@ h3 {
        margin: 0;
    }
     
+   ul li {
+    display: initial;
+    }
+
+    ul :nth-child(4) {
+    display: none;
+    }
+
+
+
     header {
-        width: 1070px;
+        margin-left: 4%;
+        margin-right: 4%;
+
     }
     .items {
-        grid-template-columns: repeat(3, 350px);
-        grid-template-rows: repeat(13, 520px);
+        margin-left: 4%;
+        margin-right: 4%;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: repeat(14, 1fr);
         gap: 20px;
         overflow: hidden;
     }
@@ -152,20 +193,34 @@ h3 {
         grid-row: 1/2;
     }
 
-    .items :nth-child(1) img {
-        width: 1080px;
-    }
-
     .items :nth-child(8) {
         grid-column: 1/4;
         grid-row: 4/5;
     }
 
-    .items :nth-child(8) img {
-        width: 1080px;
+    .items :nth-child(15) {
+        grid-column: 1/4;
+        grid-row: 7/8;
     }
+    .items :nth-child(20) {
+        grid-column: 1/4;
+        grid-row: 10/11;
+    }
+    .items :nth-child(27) {
+        grid-column: 1/4;
+        grid-row: 13/14;
+    } 
+ 
 
-
+   footer {
+       margin-left: 4%;
+       display: grid;
+       grid-template-columns: 1.5fr 1fr 1.5fr 1fr;
+       grid-template-rows: 1fr;
+   }
+    #copyright {
+        margin-left: 4%;
+    }
 
 }
 
