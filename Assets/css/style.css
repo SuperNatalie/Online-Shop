@@ -27,6 +27,8 @@ main a {
 } 
 
 header {
+    margin-left: 2%;
+    margin-right: 2%;
     display: flex;
     justify-content: space-between;
     font-size: 1.3em;
@@ -63,7 +65,9 @@ ul :nth-child(4) {
 .items {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(33, 550px );
+    grid-template-rows: repeat(32, 550px );
+    margin-left: 2%;
+    margin-right: 2%;
 }
 
 img {
@@ -132,6 +136,10 @@ a {
 
 /* footer */
 
+footer {
+    margin-left: 2%;
+    margin-right: 2%;
+}
 
 
 .small, .small a  {
