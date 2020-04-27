@@ -38,11 +38,22 @@ header {
 }
 
 .nav {
-    width: 50vw;
+    width: 20vw;
     display: flex;
     justify-content: space-between;
 }
 
+
+.nav img {
+    height: 20px;
+    width: 20px;
+} 
+
+
+a {
+    text-decoration: none;
+    color: black;
+}
 ul {
     list-style-type: none;
     display: flex;
@@ -55,8 +66,10 @@ ul li {
 
 ul :nth-child(4) {
     display: initial;
-    margin-left: 95%;
-    margin-right: auto;
+
+
+    margin-left: auto;
+    margin-right: 4%;
 }
 /* main */
 
@@ -65,7 +78,7 @@ ul :nth-child(4) {
 .items {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(32, 550px );
+    grid-template-rows: repeat(31, 550px );
     margin-left: 2%;
     margin-right: 2%;
 }
@@ -81,21 +94,6 @@ img {
 }
 
 
-nav a{
-    display: none;
-}
-
-nav img {
-    height: 20px;
-    width: 20px;
-    float: right;
-}
-
-
-a {
-    text-decoration: none;
-    color: black;
-}
 
 /* Eigene Klasse für Artikelbeschreibung (text) und Price, damit es im grid nebeneinander steht */
 
@@ -171,7 +169,10 @@ h3 {
    #margin {
        margin: 0;
    }
-    
+   .nav {
+    width: 50vw;
+  }
+
    ul li {
     display: initial;
     }
@@ -210,11 +211,11 @@ h3 {
         grid-column: 1/4;
         grid-row: 7/8;
     }
-    .items :nth-child(20) {
+    .items :nth-child(22) {
         grid-column: 1/4;
         grid-row: 10/11;
     }
-    .items :nth-child(27) {
+    .items :nth-child(29) {
         grid-column: 1/4;
         grid-row: 13/14;
     } 
