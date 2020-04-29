@@ -181,7 +181,13 @@ h3 {
     display: none;
     }
 
+a:hover {
+color: darkgrey;
+}
 
+ header p:hover  {
+    color: rgb(134, 130, 130);
+}
 
     header {
         margin-left: 4%;
